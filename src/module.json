@@ -1,0 +1,48 @@
+{
+  "id": "shape-walk",
+  "name": "Shape Walk",
+  "abbrev": "SW",
+  "version": "0.7.0",
+  "api_version": 2,
+  "dsp": "dsp.so",
+  "description": "Seeded chord sequences from moving fourth and fifth dyads",
+  "author": "mestela",
+  "capabilities": {
+    "chainable": true,
+    "component_type": "midi_fx",
+    "ui_hierarchy": {
+      "levels": {
+        "root": {
+          "name": "Shape Walk",
+          "params": [
+            {"key":"seed","name":"Seed","type":"int","min":0,"max":9999,"step":1,"default":1234},
+            {"key":"root","name":"Root Note","type":"enum","options":["C","C#","D","D#","E","F","F#","G","G#","A","A#","B"],"options_as_string":true,"default":0},
+            {"key":"length","name":"Steps","type":"enum","options":["4","8","16"],"options_as_string":true,"default":1},
+            {"key":"left","name":"Left Shape","type":"enum","options":["4th","5th","either"],"options_as_string":true,"default":0},
+            {"key":"right","name":"Right Shape","type":"enum","options":["4th","5th","either"],"options_as_string":true,"default":1},
+            {"key":"distance","name":"Hand Distance","type":"int","min":0,"max":100,"step":1,"default":20},
+            {"key":"hand_gap","name":"Min Hand Gap","type":"int","min":0,"max":12,"step":1,"default":0},
+            {"key":"path","name":"Path","type":"enum","options":["loop","mirror","fifths","free"],"options_as_string":true,"default":0},
+            {"key":"wander","name":"Wander","type":"int","min":0,"max":100,"step":1,"default":25},
+            {"key":"split","name":"Split Hands","type":"int","min":0,"max":100,"step":1,"default":25},
+            {"key":"continuity","name":"Continuity","type":"int","min":0,"max":100,"step":1,"default":65},
+            {"key":"colour","name":"Colour Chance","type":"int","min":0,"max":100,"step":1,"default":25},
+            {"key":"tension","name":"Tension","type":"int","min":0,"max":100,"step":1,"default":25},
+            {"key":"smoothness","name":"Smoothness","type":"int","min":0,"max":100,"step":1,"default":0},
+            {"key":"tonal_colour","name":"Tonal Colour","type":"enum","options":["open","major","minor","2nd","6th","b6","b7","maj7","min7","maj9","min9"],"options_as_string":true,"default":0},
+            {"key":"tonal_pull","name":"Tonal Pull","type":"int","min":0,"max":100,"step":1,"default":0},
+            {"key":"inversion","name":"Inversion","type":"enum","options":["root","1st","2nd","3rd"],"options_as_string":true,"default":0},
+            {"key":"bass_mode","name":"Bass Mode","type":"enum","options":["off","follow","wander"],"options_as_string":true,"default":0},
+            {"key":"bass_offset","name":"Bass Offset","type":"int","min":-24,"max":0,"step":1,"default":-12},
+            {"key":"bass_motion","name":"Bass Motion","type":"int","min":0,"max":100,"step":1,"default":50},
+            {"key":"mode","name":"Play Mode","type":"enum","options":["pads","clock"],"options_as_string":true,"default":0},
+            {"key":"clock_rate","name":"Clock Rate","type":"enum","options":["1 beat","2 beats","4 beats","1.5 beats","3 beats","6 beats"],"options_as_string":true,"default":0},
+            {"key":"sustain","name":"Sustain %","type":"int","min":1,"max":100,"step":1,"default":100},
+            {"key":"trigger","name":"First Trigger","type":"int","min":0,"max":112,"step":1,"default":48}
+          ],
+          "knobs": ["seed","root","length","left","right","distance","hand_gap","path","wander","split","continuity","colour","tension","smoothness","tonal_colour","tonal_pull","inversion","bass_mode","bass_offset","bass_motion","mode","clock_rate","sustain","trigger"]
+        }
+      }
+    }
+  }
+}

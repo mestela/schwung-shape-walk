@@ -1,0 +1,20 @@
+{
+  "id": "shape-walk-seq",
+  "name": "Shape Walk Pads",
+  "version": "0.7.0",
+  "author": "mestela",
+  "description": "Explore generated chords on the left pads and save playable chords on the right pads",
+  "component_type": "tool",
+  "ui": "ui.js",
+  "dsp": "dsp.so",
+  "tool_config": {
+    "interactive": true,
+    "skip_file_browser": true,
+    "overtake": true
+  },
+  "capabilities": {
+    "midi_out": true,
+    "suspend_keeps_js": true,
+    "button_passthrough": [40, 41, 42, 43, 85, 86]
+  }
+}

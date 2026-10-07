@@ -1,0 +1,6 @@
+tests/test_shape_walk
+tests/test_shape_walk_seq
+src/dsp.so
+src/overtake/dsp.so
+dist/
+.DS_Store
