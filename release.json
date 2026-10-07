@@ -1,0 +1,14 @@
+{
+  "version": "0.7.0",
+  "download_url": "https://github.com/mestela/schwung-shape-walk/releases/download/v0.7.0/shape-walk-seq-module.tar.gz",
+  "modules": {
+    "shape-walk": {
+      "version": "0.7.0",
+      "download_url": "https://github.com/mestela/schwung-shape-walk/releases/download/v0.7.0/shape-walk-module.tar.gz"
+    },
+    "shape-walk-seq": {
+      "version": "0.7.0",
+      "download_url": "https://github.com/mestela/schwung-shape-walk/releases/download/v0.7.0/shape-walk-seq-module.tar.gz"
+    }
+  }
+}

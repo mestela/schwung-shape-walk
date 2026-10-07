@@ -4,7 +4,9 @@ A MIDI effect that generates a repeatable sequence of chords by moving two fourt
 
 ## Install
 
-Download `shape-walk-v0.7.0.tar.gz` from the [latest release](https://github.com/mestela/schwung-shape-walk/releases/latest). Extract it into `/data/UserData/schwung/modules/` on your Move, then restart Schwung. The archive installs **Shape Walk** under `midi_fx/` and **Shape Walk Pads** under `tools/`. It does not contain or replace your saved chords in `/data/UserData/schwung/shape-walk-seq.json`.
+**From Schwung Manager:** Under **Install Custom Module → From GitHub URL**, enter `https://github.com/mestela/schwung-shape-walk`. This installs **Shape Walk Pads**, which generates and plays chords on its own. To add the **Shape Walk MIDI FX**, download `shape-walk-module.tar.gz` from the [latest release](https://github.com/mestela/schwung-shape-walk/releases/latest) and use **Install Custom Module → From Tarball**. The manager installs one module per action; do not give it the combined archive.
+
+**Manual installation:** Download `shape-walk-v0.7.0.tar.gz` from the [latest release](https://github.com/mestela/schwung-shape-walk/releases/latest). Extract it into `/data/UserData/schwung/modules/` on your Move, then restart Schwung. The archive installs **Shape Walk** under `midi_fx/` and **Shape Walk Pads** under `tools/`. It does not contain or replace your saved chords in `/data/UserData/schwung/shape-walk-seq.json`.
 
 Requires [Schwung](https://github.com/mestela/schwung) on Ableton Move.
 

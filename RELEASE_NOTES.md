@@ -9,6 +9,8 @@ First public release of Shape Walk for Schwung on Ableton Move.
 
 ## Install
 
-Download `shape-walk-v0.7.0.tar.gz` and extract it into `/data/UserData/schwung/modules/` on Move. Restart Schwung. The archive includes both modules and leaves saved chord data untouched.
+In Schwung Manager, install `https://github.com/mestela/schwung-shape-walk` under **Install Custom Module → From GitHub URL** to get Shape Walk Pads. Install the optional MIDI FX by uploading `shape-walk-module.tar.gz` under **From Tarball**.
+
+For manual installation, download `shape-walk-v0.7.0.tar.gz` and extract it into `/data/UserData/schwung/modules/` on Move. Restart Schwung. The combined archive includes both modules and leaves saved chord data untouched.
 
 Requires [Schwung](https://github.com/mestela/schwung) on Ableton Move. See the [README](https://github.com/mestela/schwung-shape-walk#readme) for controls and build instructions.
